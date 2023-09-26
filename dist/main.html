@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="main.js" defer></script>
+    <title>Main Page</title>
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <form id="createCharacterForm">
+            <label for="characterName">Name:</label>
+            <input type="text" id="characterName" required><br>
+        
+            <label for="race">Race:</label>
+            <select id="race" required>
+                <option value="Human">Human</option>
+                <option value="Elf">Elf</option>
+                <option value="CatGirls">CatPeople</option>
+                <option value="SmolPeople">SmolPeople</option>
+            </select><br>
+        
+            <label for="job">Job:</label>
+            <select id="job" required>
+                <option value="Warrior">Warrior</option>
+                <option value="Tank">Tank</option>
+                <option value="Healer">Healer</option>
+                <option value="Mage">Mage</option>
+            </select><br>
+        
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female" required>
+            <label for="female">Female</label><br>
+        
+            <label for="hairColor">Hair Color:</label>
+            <input type="color" id="hairColor" required>
+            <div id="selectedHairColor"></div>
+            
+            <label for="eyeColor">Eye Color:</label>
+            <input type="color" id="eyeColor" required>
+            <div id="selectedEyeColor"></div> 
+            
+            <button type="submit">Create Character</button>
+        </form>
+
+        <h2>My Party</h2>
+        <div id="partySection" class="party-section"></div>
+
+        <div class="select-container">
+            <label for="spellSelect">Select Spell:</label>
+            <select id="spellSelect">
+                <option value="Cure">Cure</option>
+                <option value="Fire">Fire</option>
+                <option value="DoT">DoT</option>
+            </select>
+            <button id="addSpellButton">Add Spell</button>
+        </div>
+
+        <div class="select-container">
+            <label for="weaponSelect">Select Weapon:</label>
+            <select id="weaponSelect">
+                <option value="Great Axe">Great Axe</option>
+                <option value="Sword and Shield">Sword and Shield</option>
+                <option value="Staff">Staff</option>
+            </select>
+            <button id="addWeaponButton">Add Weapon</button>
+        </div>
+    </div>
+</body>
+</html>

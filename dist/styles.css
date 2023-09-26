@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Female_DualWielder_Art.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff; /* Light text color */
+    font-family: Arial, sans-serif; /* Change font if desired */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 8px;
+}
+
+button {
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main Page */
+
+/* Add spacing between form elements */
+#createCharacterForm label,
+#createCharacterForm input,
+#createCharacterForm select {
+    margin-bottom: 10px;
+}
+
+/* Add additional spacing for radio buttons */
+#createCharacterForm input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Add space below the color inputs */
+#createCharacterForm input[type="color"] {
+    margin-bottom: 10px;
+}
+
+
